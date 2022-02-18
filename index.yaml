@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   lulc-helm:
   - apiVersion: v1
+    created: "2022-02-18T09:54:00.774153727Z"
+    description: Helm Chart to deploy the LULC Infrastructure
+    digest: 04044c4f17196ef28d63c2f999ccdcfbfdac6eb533dea9277d3c9f6d8b34ab0d
+    name: lulc-helm
+    urls:
+    - https://devseed.com/pearl-helm-chart/lulc-helm-0.0.1-n3141.h79601308.tgz
+    version: 0.0.1-n3141.h79601308
+  - apiVersion: v1
     created: "2022-02-18T09:46:58.07414553Z"
     description: Helm Chart to deploy the LULC Infrastructure
     digest: 6832d6619c3b5d0c89bff04cbd6763604c16a72df927a27569826ccb96ff3edc
@@ -33,4 +41,4 @@ entries:
     urls:
     - https://devseed.com/pearl-helm-chart/lulc-helm-0.0.1-n3125.h27e06e6d.tgz
     version: 0.0.1-n3125.h27e06e6d
-generated: "2022-02-18T09:46:58.072149992Z"
+generated: "2022-02-18T09:54:00.772117791Z"
