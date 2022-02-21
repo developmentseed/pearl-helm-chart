@@ -1,21 +1,21 @@
 ---
 layout: none
 ---
-{%- assign lulc-helm = site.data.index.entries.lulc-helm | sort: 'created' | reverse -%}
+{%- assign pearl-helm = site.data.index.entries.pearl-helm | sort: 'created' | reverse -%}
 
-{%- assign lulc_helm_latest = lulc-helm | first -%}
+{%- assign pearl_helm_latest = pearl-helm | first -%}
 
-{%- capture "lulc_helm_stable_version" -%}
-{%- for chart in lulc-helm -%}
+{%- capture "pearl_helm_stable_version" -%}
+{%- for chart in pearl-helm -%}
     {%- unless chart.version contains "-" -%}
         {{ chart.version }};
     {%- endunless -%}
 {%- endfor -%}
 {%- endcapture -%}
-{%- assign lulc_helm_stable_version = lulc_helm_stable_version | split: ";" | first -%}
+{%- assign pearl_helm_stable_version = pearl_helm_stable_version | split: ";" | first -%}
 
-{%- capture "lulc_helm_pre_version" -%}
-{%- for chart in lulc-helm -%}
+{%- capture "pearl_helm_pre_version" -%}
+{%- for chart in pearl-helm -%}
     {%- assign dots_count_after_dash = chart.version | split: "-" | shift | first | split: "." | size | minus: 1 -%}
     {%- assign first_char_after_dash = chart.version | split: "-" | shift | first | slice: 0 -%}
     {%- if chart.version contains "-" -%}
@@ -29,15 +29,15 @@ layout: none
     {%- endif -%}
 {%- endfor -%}
 {%- endcapture -%}
-{%- assign lulc_helm_pre_version = lulc_helm_pre_version | split: ";" | first -%}
+{%- assign pearl_helm_pre_version = pearl_helm_pre_version | split: ";" | first -%}
 
 
 {
-    "lulc-helm":
+    "pearl-helm":
         {
-            "stable": "{{ lulc_helm_stable_version }}",
-            "pre": "{{ lulc_helm_pre_version }}",
-            "dev": "{{ lulc_helm_latest.version }}",
-            "latest": "{{ lulc_helm_latest.version }}"
+            "stable": "{{ pearl_helm_stable_version }}",
+            "pre": "{{ pearl_helm_pre_version }}",
+            "dev": "{{ pearl_helm_latest.version }}",
+            "latest": "{{ pearl_helm_latest.version }}"
         }
 }

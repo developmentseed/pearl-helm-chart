@@ -20,4 +20,4 @@ description: |
 
 # We also use custom variables accessed in index.md by {% site.variableName %}
 stableCharts:
-  - lulc-infra
+  - pearl-helm
