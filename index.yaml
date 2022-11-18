@@ -146,6 +146,14 @@ entries:
     - https://devseed.com/pearl-helm-chart/pearl-helm-0.0.1-n3150.hba6cd9e3.tgz
     version: 0.0.1-n3150.hba6cd9e3
   - apiVersion: v1
+    created: "2022-11-18T15:32:14.49981948Z"
+    description: Helm Chart to deploy the Pearl Infrastructure
+    digest: eff7ffbe700dd0a07c9e1584b34b657dd15810ac8499de3affbe2bd855c8b14a
+    name: pearl-helm
+    urls:
+    - https://devseed.com/pearl-helm-chart/pearl-helm-0.0.1-0.dev.git.3274.h4d6685b1.tgz
+    version: 0.0.1-0.dev.git.3274.h4d6685b1
+  - apiVersion: v1
     created: "2022-11-17T23:01:28.729825613Z"
     description: Helm Chart to deploy the Pearl Infrastructure
     digest: e86f9b60d7c24a5052004224c3981706e31656dd3951f86323546da799e043d6
@@ -417,4 +425,4 @@ entries:
     urls:
     - https://devseed.com/pearl-helm-chart/pearl-helm-0.0.1-0.dev.git.3240.h23a833aa.tgz
     version: 0.0.1-0.dev.git.3240.h23a833aa
-generated: "2022-11-17T23:01:28.728363102Z"
+generated: "2022-11-18T15:32:14.498589691Z"
